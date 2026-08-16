@@ -69,11 +69,16 @@
                 <div class="legenda-sobreposta">
                     <h3>Freizeitsraum</h3>
                 </div>
-                <picture>    
-                    <source media="(min-width: 700px)" srcset="images/Freizeitsraum400.jpg" type="image/jpg">
-                    <source media="(min-width: 300px)" srcset="images/freizeiraum200.jpg" type="image/jpg">
-                    <img src="images/Freizeitsraum100.jpg" alt="Raum mit Spielmöglichkeiten, Tischfußball und Tischtennis">
-                </picture>
+        <picture>    
+            <!-- Se a tela for de 400px ou MAIS, usa a imagem grande (400) -->
+            <source media="(min-width: 400px)" srcset="images/Freizeitsraum400.jpg" type="image/jpeg">
+            
+            <!-- Se a tela for de 200px ou MAIS (e menor que 400px), usa a imagem média (200) -->
+            <source media="(min-width: 200px)" srcset="images/freizeiraum200.jpg" type="image/jpeg">
+            
+            <!-- Padrão/Fallback para telas menores que 200px ou navegadores sem suporte -->
+            <img src="images/Freizeitsraum100.jpg" alt="Raum mit Spielmöglichkeiten, Tischfußball und Tischtennis">
+        </picture>
             </div>
 
             <!-- Item 2: Garten -->
@@ -82,8 +87,8 @@
                     <h3>Garten</h3>
                 </div>
                 <picture>    
-                    <source media="(min-width: 700px)" srcset="images/Garten400.jpg" type="image/jpg">
-                    <source media="(min-width: 300px)" srcset="images/Garten200.jpg" type="image/jpg">
+                    <source media="(min-width: 400px)" srcset="images/Garten400.jpg" type="image/jpg">
+                    <source media="(min-width: 200px)" srcset="images/Garten200.jpg" type="image/jpg">
                     <img src="images/Garten100.jpg" alt="Garten">
                 </picture>
             </div>
@@ -94,8 +99,8 @@
                     <h3>Gemeinschaftsraum</h3>
                 </div>
                 <picture>    
-                    <source media="(min-width: 700px)" srcset="images/Gemeinschaftsraum400.jpg" type="image/jpg">
-                    <source media="(min-width: 300px)" srcset="images/Gemeinschaftsraum200.jpg" type="image/jpg">
+                    <source media="(min-width: 400px)" srcset="images/Gemeinschaftsraum400.jpg" type="image/jpg">
+                    <source media="(min-width: 200px)" srcset="images/Gemeinschaftsraum200.jpg" type="image/jpg">
                     <img src="images/Gemeinschaftsraum100.jpg" alt="Gemeinschaftsraum">
                 </picture>
             </div>
@@ -106,8 +111,8 @@
                     <h3>Gesprächsbaum</h3>
                 </div>
                 <picture>    
-                    <source media="(min-width: 700px)" srcset="images/Gespraechsbaum400.jpg" type="image/jpg">
-                    <source media="(min-width: 300px)" srcset="images/Gespraechsbaum200.jpg" type="image/jpg">
+                    <source media="(min-width: 400px)" srcset="images/Gespraechsbaum400.jpg" type="image/jpg">
+                    <source media="(min-width: 200px)" srcset="images/Gespraechsbaum200.jpg" type="image/jpg">
                     <img src="images/Gespraechsbaum100.jpg" alt="Holzbänke mit einem Baum in der Mitte">
                 </picture>
             </div>
@@ -118,8 +123,8 @@
                     <h3>Kaffeeeck</h3>
                 </div>
                 <picture>    
-                    <source media="(min-width: 700px)" srcset="images/Kaffeeeck400.jpg" type="image/jpg">
-                    <source media="(min-width: 300px)" srcset="images/Kaffeeeck200.jpg" type="image/jpg">
+                    <source media="(min-width: 400px)" srcset="images/Kaffeeeck400.jpg" type="image/jpg">
+                    <source media="(min-width: 200px)" srcset="images/Kaffeeeck200.jpg" type="image/jpg">
                     <img src="images/Kaffeeeck100.jpg" alt="Kaffeeeck">
                 </picture>
             </div>
@@ -130,8 +135,8 @@
                     <h3>Werkraum</h3>
                 </div>
                 <picture>    
-                    <source media="(min-width: 700px)" srcset="images/Werkraum400.jpg" type="image/jpg">
-                    <source media="(min-width: 300px)" srcset="images/Werkraum200.jpg" type="image/jpg">
+                    <source media="(min-width: 400px)" srcset="images/Werkraum400.jpg" type="image/jpg">
+                    <source media="(min-width: 200px)" srcset="images/Werkraum200.jpg" type="image/jpg">
                     <img src="images/Werkraum100.jpg" alt="Werkraum">
                 </picture>
             </div>
