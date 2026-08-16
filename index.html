@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Gemeinschaftswohnanlage Bretagne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Âncora Invisível para o Topo -->
+    <div id="home"></div>
+
+    <header class="cabecalho">
+        <!-- Lado Esquerdo: Logo -->
+        <div class="logo">
+            <a href="#home">
+                <img src="images/newlogo.jpg" alt="Logo der Gemeinschaftswohnanlage Bretagne">
+            </a>
+        </div>
+
+        <!-- Centro: Nome do Site -->
+        <h1 class="titulo-site">Gemeinschaftswohnanlage Bretagne</h1>
+
+        <!-- Lado Direito: Menu de Navegação por Âncoras -->
+        <nav class="menu-dropdown">
+            <details>
+                <summary class="btn-menu">
+                    <span class="linha"></span>
+                    <span class="linha"></span>
+                    <span class="texto-menu">Menu</span>
+                </summary>
+                <ul class="lista-menu">
+                    <li><a href="#principal">Startseite</a></li>
+                    <li><a href="#haus">Unser Haus</a></li>
+                    <li><a href="#gemeinsam">Gemeinsam Leben</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#impressum">Impressum</a></li>
+                    <li><a href="#datenschutz">Datenschutz</a></li>
+                </ul>
+            </details>
+        </nav>
+    </header>
+
+    <!-- Seção 1: Home (ID "principal" adicionado aqui) -->
+    <main id="principal" class="conteudo-principal">
+        <p class="texto-descricao">
+            Wir verbringen Zeit miteinander, teilen Aktivitäten und Räume und gestalten gemeinsam ein lebendiges und offenes Zusammenleben. Wir sind eine vielfältige Hausgemeinschaft mit 26 Wohnungen. Unser Wohnprojekt bietet Raum für Begegnung und gemeinschaftliche Aktivitäten.
+        </p>
+
+        <picture class="foto-centralizada">
+            <source media="(max-width: 750px)" srcset="images/fassade300.jpg" type="image/jpg">
+            <source media="(max-width: 1050px)" srcset="images/fassade750.jpg" type="image/jpg">
+            <img src="images/Fassade1050.jpg" alt="Fassade der Gemeinschaftswohnanlage Bretagne Wohnprojekt">
+        </picture>
+    </main>
+
+    <!-- Abschnitt 1: Unser Haus -->
+    <section id="haus" class="secao-conteudo">
+        <h2>Unser Haus</h2>
+        <p>Unsere Räumlichkeiten bieten viel Platz für Begegnung, Freizeit und gemeinschaftliches Schaffen.</p>
+        
+        <!-- Galerie der 6 Räume -->
+        <div class="galeria-haus">
+            
+            <!-- Item 1: Freizeitsraum -->
+            <div class="item-haus">
+                <div class="legenda-sobreposta">
+                    <h3>Freizeitsraum</h3>
+                </div>
+                <picture>    
+                    <source media="(min-width: 700px)" srcset="images/Freizeitsraum400.jpg" type="image/jpg">
+                    <source media="(min-width: 300px)" srcset="images/freizeiraum200.jpg" type="image/jpg">
+                    <img src="images/Freizeitsraum100.jpg" alt="Raum mit Spielmöglichkeiten, Tischfußball und Tischtennis">
+                </picture>
+            </div>
+
+            <!-- Item 2: Garten -->
+            <div class="item-haus">
+                <div class="legenda-sobreposta">
+                    <h3>Garten</h3>
+                </div>
+                <picture>    
+                    <source media="(min-width: 700px)" srcset="images/Garten400.jpg" type="image/jpg">
+                    <source media="(min-width: 300px)" srcset="images/Garten200.jpg" type="image/jpg">
+                    <img src="images/Garten100.jpg" alt="Garten">
+                </picture>
+            </div>
+
+            <!-- Item 3: Gemeinschaftsraum -->
+            <div class="item-haus">
+                <div class="legenda-sobreposta">
+                    <h3>Gemeinschaftsraum</h3>
+                </div>
+                <picture>    
+                    <source media="(min-width: 700px)" srcset="images/Gemeinschaftsraum400.jpg" type="image/jpg">
+                    <source media="(min-width: 300px)" srcset="images/Gemeinschaftsraum200.jpg" type="image/jpg">
+                    <img src="images/Gemeinschaftsraum100.jpg" alt="Gemeinschaftsraum">
+                </picture>
+            </div>
+
+            <!-- Item 4: Gesprächsbaum -->
+            <div class="item-haus">
+                <div class="legenda-sobreposta">
+                    <h3>Gesprächsbaum</h3>
+                </div>
+                <picture>    
+                    <source media="(min-width: 700px)" srcset="images/Gespraechsbaum400.jpg" type="image/jpg">
+                    <source media="(min-width: 300px)" srcset="images/Gespraechsbaum200.jpg" type="image/jpg">
+                    <img src="images/Gespraechsbaum100.jpg" alt="Holzbänke mit einem Baum in der Mitte">
+                </picture>
+            </div>
+
+            <!-- Item 5: Kaffeeeck -->
+            <div class="item-haus">
+                <div class="legenda-sobreposta">
+                    <h3>Kaffeeeck</h3>
+                </div>
+                <picture>    
+                    <source media="(min-width: 700px)" srcset="images/Kaffeeeck400.jpg" type="image/jpg">
+                    <source media="(min-width: 300px)" srcset="images/Kaffeeeck200.jpg" type="image/jpg">
+                    <img src="images/Kaffeeeck100.jpg" alt="Kaffeeeck">
+                </picture>
+            </div>
+
+            <!-- Item 6: Werkraum -->
+            <div class="item-haus">
+                <div class="legenda-sobreposta">
+                    <h3>Werkraum</h3>
+                </div>
+                <picture>    
+                    <source media="(min-width: 700px)" srcset="images/Werkraum400.jpg" type="image/jpg">
+                    <source media="(min-width: 300px)" srcset="images/Werkraum200.jpg" type="image/jpg">
+                    <img src="images/Werkraum100.jpg" alt="Werkraum">
+                </picture>
+            </div>
+
+        </div>
+
+        <a href="#home" class="btn-topo">↑ Nach oben</a>
+    </section>
+
+    <!-- Seção 3: Gemeinsam -->
+    <section id="gemeinsam" class="secao-conteudo">
+        <h2>Gemeinsam</h2>
+        <p>Gemeinschaft heißt für uns: Austausch, voneinander lernen und gegenseitige Unterstützung im Alltag, immer mit Respekt für die eigene Privatsphäre. Wir teilen Räume, Aktivitäten sowie Verantwortung und schätzen das Miteinander genauso wie den persönlichen Rückzugsraum.</p>
+        
+        <!-- Grade com os 9 itens -->
+        <div class="galeria-gemeinsam">
+            
+            <div class="card-gemeinsam">
+                <span class="icone-estrela">★</span>
+                <h3>Erzählcafé</h3>
+            </div>
+
+            <div class="card-gemeinsam">
+                <span class="icone-estrela">★</span>
+                <h3>Fahrradausflüge</h3>
+            </div>
+
+            <div class="card-gemeinsam">
+                <span class="icone-estrela">★</span>
+                <h3>Frühstücke</h3>
+            </div>
+
+            <div class="card-gemeinsam">
+                <span class="icone-estrela">★</span>
+                <h3>Gemeinschaftsgarten</h3>
+            </div>
+
+            <div class="card-gemeinsam">
+                <span class="icone-estrela">★</span>
+                <h3>Kinoabende</h3>
+            </div>
+
+            <div class="card-gemeinsam">
+                <span class="icone-estrela">★</span>
+                <h3>Kunstworkshops</h3>
+            </div>
+
+            <div class="card-gemeinsam">
+                <span class="icone-estrela">★</span>
+                <h3>Nachbarschaftshilfe</h3>
+            </div>
+
+            <div class="card-gemeinsam">
+                <span class="icone-estrela">★</span>
+                <h3>Pilates</h3>
+            </div>
+
+            <div class="card-gemeinsam">
+                <span class="icone-estrela">★</span>
+                <h3>Spieleabende</h3>
+            </div>
+
+        </div>
+
+        <a href="#home" class="btn-topo">↑ Nach oben</a>
+    </section>
+
+    <!-- Seção 4: Kontakt -->
+    <section id="kontakt" class="secao-conteudo">
+        <h2>Kontakt</h2>
+        <p>Haben Sie Fragen oder möchten Sie mit uns in Kontakt treten? Schreiben Sie uns eine Nachricht!</p>
+
+        <form action="https://formspree.io/f/wohnanlage-bretagne@gmx.de" method="POST" class="formulario-kontakt">
+            
+            <div class="grupo-campo">
+                <label for="nome">Name</label>
+                <input type="text" id="nome" name="name" placeholder="Ihr Name">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="email">E-Mail-Adresse <span class="campo-obrigatorio">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="ihre.adresse@email.de">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="telefone">Telefonnummer <span class="opcional">(optional)</span></label>
+                <input type="tel" id="telefone" name="phone" placeholder="+49 123 456789">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="mensagem">Nachricht <span class="campo-obrigatorio">*</span></label>
+                <textarea id="mensagem" name="message" rows="5" required placeholder="Ihre Nachricht an uns..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Nachricht senden</button>
+        </form>
+
+        <a href="#home" class="btn-topo">↑ Nach oben</a>
+    </section>
+
+    <!-- Seção 5: Impressum -->
+    <section id="impressum" class="secao-conteudo">
+        <h2>Impressum</h2>
+
+        <div class="formulario-kontakt" style="max-width: 800px; text-align: left;">
+            <p style="margin-bottom: 20px;"><strong>Angaben gemäß § 5 DDG:</strong></p>
+            
+            <p style="margin-bottom: 20px;">
+                <strong>FAIRein e.V.</strong><br>
+                Ufgaustr. 9<br>
+                76532 Baden-Baden
+            </p>
+
+            <p style="margin-bottom: 20px;">
+                <strong>Eingetragen im Vereinsregister:</strong><br>
+                Registergericht: Amtsgericht ????<br>
+                Registernummer: VR [Número do VR]
+            </p>
+
+            <p style="margin-bottom: 20px;">
+                <strong>Vertreten durch den Vorstand:</strong><br>
+                Bärbel Neumann<br>
+                Isabelle<br>
+                Richard<br>
+                ????<br>
+            </p>
+
+            <p style="margin-bottom: 30px;">
+                <strong>Kontakt:</strong><br>
+                E-Mail: <a href="mailto:gemeinschaftswohnen-bretagne@posteo.de" style="color: var(--cor-detalhes);">gemeinschaftswohnen-bretagne@posteo.de</a><br>
+                Telefon: +49 (0) [DDD] [Telefone]
+            </p>
+
+            <hr style="border: 0; border-top: 1px solid var(--cor-borda); margin: 30px 0;">
+
+            <p style="margin-bottom: 20px;"><strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</strong></p>
+            <p style="margin-bottom: 0;">
+                ????<br>
+                Ufgaustr. 9<br>
+                76532 Baden-Baden
+            </p>
+        </div>
+
+        <!-- Corrigido de #topo para #home -->
+        <a href="#home" class="btn-topo">↑ Nach oben</a>
+    </section>
+
+    <!-- Seção 6: Datenschutz -->
+    <section id="datenschutz" class="secao-conteudo">
+        <h2>Datenschutzerklärung</h2>
+
+        <div class="formulario-kontakt" style="max-width: 800px; text-align: left; font-size: 15px; line-height: 1.6;">
+            
+            <h3 style="color: var(--cor-detalhes); font-size: 18px; margin-bottom: 10px;">1. Datenschutz auf einen Blick</h3>
+            <p style="margin-bottom: 20px;">
+                Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personendaten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+            </p>
+
+            <h3 style="color: var(--cor-detalhes); font-size: 18px; margin-bottom: 10px;">2. Verantwortliche Stelle</h3>
+            <p style="margin-bottom: 20px;">
+                Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br><br>
+                <strong>FAIRein e.V.</strong><br>
+                Ufgaustr. 9<br>
+                76532 Baden-Baden<br>
+                E-Mail: <a href="mailto:gemeinschaftswohnen-bretagne@posteo.de" style="color: var(--cor-detalhes);">gemeinschaftswohnen-bretagne@posteo.de</a>
+            </p>
+
+            <h3 style="color: var(--cor-detalhes); font-size: 18px; margin-bottom: 10px;">3. Datenerfassung auf unserer Website</h3>
+            <p style="margin-bottom: 15px;"><strong>Server-Log-Dateien</strong></p>
+            <p style="margin-bottom: 20px;">
+                Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+            </p>
+            <ul style="margin-left: 20px; margin-bottom: 20px; color: var(--cor-texto-suave);">
+                <li>Browsertyp und Browserversion</li>
+                <li>Verwendetes Betriebssystem</li>
+                <li>Referrer URL</li>
+                <li>Hostname des zugreifenden Rechners</li>
+                <li>Uhrzeit der Serveranfrage</li>
+                <li>IP-Adresse</li>
+            </ul>
+            <p style="margin-bottom: 20px;">
+                Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technically fehlerfreien Darstellung und der Optimierung seiner Website.
+            </p>
+
+            <p style="margin-bottom: 15px;"><strong>Kontaktaufnahme per E-Mail oder Formular</strong></p>
+            <p style="margin-bottom: 20px;">
+                Wenn Sie uns per E-Mail oder über ein Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter (Art. 6 Abs. 1 lit. b DSGVO).
+            </p>
+
+            <h3 style="color: var(--cor-detalhes); font-size: 18px; margin-bottom: 10px;">4. Ihre Rechte</h3>
+            <p style="margin-bottom: 0;">
+                Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
+            </p>
+
+        </div>
+
+        <!-- Corrigido de #topo para #home -->
+        <a href="#home" class="btn-topo">↑ Nach oben</a>
+    </section>
+
+<!-- Fußzeile / Footer -->
+    <footer class="rodape">
+        <p>&copy; 2026 Gemeinschaftswohnanlage Bretagne &bull; Erstellt von RBG</p>
+    </footer>
+
+</body>
+</html>

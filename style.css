@@ -1,0 +1,408 @@
+/* ==========================================================================
+   PALETA DE CORES (OPÇÃO A) & VARIÁVEIS GLOBAIS
+   ========================================================================== */
+:root {
+    --cor-fundo: #fcfaf7;          /* Off-white / Creme suave */
+    --cor-fundo-cartao: #ffffff;   /* Branco puro para destaques/cards */
+    --cor-fundo-secao: #f4efe9;    /* Tom bege/creme suave para alternar seções */
+    --cor-texto: #2b2d42;          /* Grafite escuro para alta legibilidade */
+    --cor-texto-suave: #5c6270;    /* Grafite médio para parágrafos secundários */
+    
+    --cor-destaque: #c86d51;       /* Terracota acolhedor (botões, links, ícones) */
+    --cor-destaque-hover: #b0573c; /* Terracota mais escuro para estados ativos */
+    
+    --cor-titulo: #1d3557;         /* Azul-escuro sóbrio e elegante para títulos */
+    --cor-secundaria: #6b8e23;     /* Verde-oliva natural para detalhes/estrelas */
+    
+    --cor-borda: #e2dcd5;          /* Borda sutil em tom terroso */
+    --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.06);
+    --sombra-hover: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================================================
+   RESET & ESTILOS BASE
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   CABEÇALHO (HEADER)
+   ========================================================================== */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--cor-fundo-cartao);
+    border-bottom: 2px solid var(--cor-borda);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--sombra-suave);
+}
+
+.logo img {
+    max-height: 50px;
+    width: auto;
+    display: block;
+}
+
+.titulo-site {
+    color: var(--cor-titulo);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Menu Dropdown com <details> */
+.menu-dropdown details {
+    position: relative;
+}
+
+.btn-menu {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: var(--cor-fundo-secao);
+    transition: background-color 0.3s ease;
+}
+
+.btn-menu:hover {
+    background-color: var(--cor-borda);
+}
+
+.btn-menu .linha {
+    width: 22px;
+    height: 2px;
+    background-color: var(--cor-titulo);
+}
+
+.texto-menu {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--cor-titulo);
+}
+
+.lista-menu {
+    position: absolute;
+    right: 0;
+    top: 110%;
+    background-color: var(--cor-fundo-cartao);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    box-shadow: var(--sombra-hover);
+    list-style: none;
+    width: 200px;
+    overflow: hidden;
+}
+
+.lista-menu li a {
+    display: block;
+    padding: 12px 16px;
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.lista-menu li a:hover {
+    background-color: var(--cor-fundo-secao);
+    color: var(--cor-destaque);
+}
+
+/* ==========================================================================
+   CONTEÚDO PRINCIPAL / HERO
+   ========================================================================== */
+.conteudo-principal {
+    padding: 40px 5%;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.texto-descricao {
+    font-size: 1.15rem;
+    color: var(--cor-texto-suave);
+    margin-bottom: 30px;
+}
+
+.foto-centralizada img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--sombra-suave);
+}
+
+/* ==========================================================================
+   SEÇÕES DE CONTEÚDO (Geral)
+   ========================================================================== */
+.secao-conteudo {
+    padding: 60px 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.secao-conteudo:nth-of-type(even) {
+    background-color: var(--cor-fundo-secao);
+    border-radius: 16px;
+}
+
+.secao-conteudo h2 {
+    color: var(--cor-titulo);
+    font-size: 2rem;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.secao-conteudo h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: var(--cor-destaque);
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.secao-conteudo p {
+    color: var(--cor-texto-suave);
+    margin-bottom: 35px;
+    font-size: 1.05rem;
+}
+
+/* ==========================================================================
+   GALERIA DA SEÇÃO: UNSER HAUS
+   ========================================================================== */
+.galeria-haus {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.item-haus {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+    background-color: var(--cor-fundo-cartao);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-haus:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-hover);
+}
+
+.item-haus img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.legenda-sobreposta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(29, 53, 87, 0.85));
+    color: #ffffff;
+    padding: 20px 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.legenda-sobreposta h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.icone-estrela {
+    color: var(--cor-secundaria);
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   RASTER DA SEÇÃO: GEMEINSAM LEBEN (3 Colunas)
+   ========================================================================== */
+.galeria-gemeinsam {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Força exatamente 3 colunas em telas médias/grandes */
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Responsividade para telas menores e dispositivos móveis */
+@media (max-width: 768px) {
+    .galeria-gemeinsam {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria-gemeinsam {
+        grid-template-columns: 1fr; /* 1 coluna em celulares */
+    }
+}
+
+/* ==========================================================================
+   FORMULÁRIO DE CONTATO & SEÇÕES DE TEXTO (IMPRESSUM / DATENSCHUTZ)
+   ========================================================================== */
+.formulario-kontakt {
+    background-color: var(--cor-fundo-cartao);
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid var(--cor-borda);
+    box-shadow: var(--sombra-suave);
+    max-width: 650px;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+
+.grupo-campo {
+    margin-bottom: 20px;
+}
+
+.grupo-campo label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--cor-titulo);
+}
+
+.campo-obrigatorio {
+    color: var(--cor-destaque);
+}
+
+.opcional {
+    font-size: 0.85rem;
+    color: var(--cor-texto-suave);
+    font-weight: normal;
+}
+
+.grupo-campo input,
+.grupo-campo textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grupo-campo input:focus,
+.grupo-campo textarea:focus {
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 0 3px rgba(200, 109, 81, 0.15);
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--cor-destaque);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-enviar:hover {
+    background-color: var(--cor-destaque-hover);
+}
+
+.btn-enviar:active {
+    transform: scale(0.99);
+}
+
+/* ==========================================================================
+   BOTÃO "NACH OBEN" (VOLTAR AO TOPO)
+   ========================================================================== */
+.btn-topo {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: var(--cor-fundo-secao);
+    color: var(--cor-titulo);
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid var(--cor-borda);
+    transition: all 0.3s ease;
+}
+
+.btn-topo:hover {
+    background-color: var(--cor-destaque);
+    color: #ffffff;
+    border-color: var(--cor-destaque);
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (MEDIA QUERIES)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .titulo-site {
+        font-size: 1.1rem;
+    }
+
+    .secao-conteudo h2 {
+        font-size: 1.6rem;
+    }
+
+    .formulario-kontakt {
+        padding: 20px;
+    }
+}
+/* ==========================================================================
+   FUSSZEILE (FOOTER)
+   ========================================================================== */
+.rodape {
+    background-color: var(--cor-titulo);   /* Azul-escuro sóbrio da paleta */
+    color: #ffffff;                        /* Texto em branco para alto contraste */
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--cor-borda);
+}
+
+.rodape p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);      /* Texto suave em branco */
+    letter-spacing: 0.5px;
+}
